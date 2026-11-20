@@ -35,6 +35,7 @@
       padding: 0.4em 0.95em; border: 1.5px solid var(--line); border-radius: 999px;
       color: var(--muted); transition: border-color .15s, color .15s;
     }
+    .launchers { display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem; }
     .goo:hover { border-color: var(--ink); color: var(--ink); }
 
     /* hero */
@@ -46,7 +47,6 @@
       line-height: 1; letter-spacing: -0.035em; font-weight: 900;
     }
     .tagline { margin-top: 0.8rem; font-size: clamp(1.05rem, 2.4vw, 1.3rem); color: var(--muted); }
-    .stats { margin-top: 0.4rem; font-size: 0.95rem; color: var(--muted); }
     .actions { margin-top: 1.8rem; display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
     .btn {
       display: inline-flex; align-items: center; gap: 0.55em;
@@ -102,14 +102,16 @@
   <div class="wrap">
     <nav>
       <a class="brand" href="/"><svg viewBox="0 0 180 90"><use href="#domino"/></svg>Domino Dominick</a>
-      <a class="goo" href="https://dominodominick.com/gooparty">Launch GooParty →</a>
+      <div class="launchers">
+        <a class="goo" href="https://dominodominick.com/gooparty">Launch GooParty →</a>
+        <a class="goo" href="https://dominodominick.com/jackinthejackrooms">Launch Jack in the Jackrooms →</a>
+      </div>
     </nav>
 
     <header class="hero">
       <svg class="logo" viewBox="0 0 180 90" role="img" aria-label="Domino logo"><use href="#domino"/></svg>
       <h1>Domino Dominick</h1>
       <p class="tagline">i do a little bit of everything</p>
-      <p class="stats">Gaming, playthroughs, Wii Party, and whatever else happens.</p>
       <div class="actions">
         <a class="btn btn-red" href="https://www.youtube.com/@dominodominick?sub_confirmation=1" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
